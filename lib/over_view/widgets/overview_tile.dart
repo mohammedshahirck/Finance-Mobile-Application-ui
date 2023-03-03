@@ -32,7 +32,7 @@ class OverViewTile extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: const Color(0xffe6e7f9),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(13),
             ),
             child: icons[index]),
         title: Text(

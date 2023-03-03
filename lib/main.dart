@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:machine_task/controller/choice_chip.dart';
-import 'package:machine_task/login_page/login_page.dart';
+import 'package:machine_task/login_page/view/login_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 List<Widget> icons = const [
-  Icon(Icons.arrow_upward),
-  Icon(Icons.arrow_downward),
-  Icon(Icons.attach_money),
+  Icon(
+    Icons.arrow_upward,
+    color: Colors.black,
+  ),
+  Icon(Icons.arrow_downward, color: Colors.black),
+  Icon(Icons.attach_money, color: Colors.black),
 ];
 
 List<String> title = [

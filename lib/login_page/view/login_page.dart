@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:machine_task/login_page/widgets/custom_elevated_button.dart';
 import 'package:machine_task/login_page/widgets/custom_textfield.dart';
-import 'package:machine_task/over_view/over_view_page.dart';
+import 'package:machine_task/over_view/view/over_view_page.dart';
+
 import 'package:machine_task/utils/styles/hieght_width.dart';
 
 class LoginPage extends StatelessWidget {
@@ -50,24 +51,30 @@ class LoginPage extends StatelessWidget {
               },
               title: 'Login',
             ),
-            Ksize.ksize30,
+            Ksize.ksize20,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'SignUp',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyLarge
-                      ?.copyWith(fontSize: 16, color: Colors.black54),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'SignUp',
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyLarge
+                        ?.copyWith(fontSize: 16, color: Colors.black54),
+                  ),
                 ),
-                Text(
-                  'Forgot Password?',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyLarge
-                      ?.copyWith(fontSize: 16, color: Colors.black54),
-                )
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Forgot Password?',
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyLarge
+                        ?.copyWith(fontSize: 16, color: Colors.black54),
+                  ),
+                ),
               ],
             )
           ],

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:machine_task/over_view/widgets/overview_tile.dart';
 import 'package:machine_task/over_view/widgets/user_details.dart';
-import 'package:machine_task/recent_transactions/recent_transactions.dart';
+
+import 'package:machine_task/recent_transactions/view/recent_transactions.dart';
 import 'package:machine_task/utils/styles/hieght_width.dart';
 
 class OverViewPage extends StatelessWidget {
@@ -16,7 +17,15 @@ class OverViewPage extends StatelessWidget {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              const UserDetails(),
+              InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) {
+                        return const RecentTransaction();
+                      },
+                    ));
+                  },
+                  child: const UserData()),
               Ksize.ksize20,
               Row(
                 children: [
@@ -28,13 +37,7 @@ class OverViewPage extends StatelessWidget {
                         fontWeight: FontWeight.bold),
                   ),
                   IconButton(
-                      onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (context) {
-                            return const RecentTransaction();
-                          },
-                        ));
-                      },
+                      onPressed: () {},
                       icon: const Badge(
                         alignment: AlignmentDirectional.topCenter,
                         child: Icon(

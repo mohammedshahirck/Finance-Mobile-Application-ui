@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:machine_task/over_view/widgets/custom_column_text.dart';
 import 'package:machine_task/utils/styles/hieght_width.dart';
 
-class UserDetails extends StatelessWidget {
-  const UserDetails({
+class UserData extends StatelessWidget {
+  const UserData({
     super.key,
   });
 
